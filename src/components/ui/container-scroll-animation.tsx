@@ -46,7 +46,7 @@ export const ContainerScroll = ({
         }}
       >
         <Header translate={translate} titleComponent={titleComponent} />
-        <Card rotate={rotate} translate={translate} scale={scale}>
+        <Card rotate={rotate} scale={scale}>
           {children}
         </Card>
       </div>
@@ -70,12 +70,10 @@ export const Header = ({ translate, titleComponent }: any) => {
 export const Card = ({
   rotate,
   scale,
-  translate,
   children,
 }: {
   rotate: any;
   scale: any;
-  translate: any;
   children: React.ReactNode;
 }) => {
   return (

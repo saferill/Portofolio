@@ -736,6 +736,15 @@ function App() {
 
           </div>
         </section>
+
+        {/* Footer */}
+        <footer className="w-full py-8 border-t border-black/5 bg-white flex flex-col sm:flex-row items-center justify-between px-5 sm:px-8 md:px-10 text-[14px] text-zinc-500">
+          <p>© {new Date().getFullYear()} Moch. Syafril Ramadhani.</p>
+          <div className="flex items-center gap-6 mt-4 sm:mt-0">
+            <a href="https://github.com/saferill" target="_blank" rel="noopener noreferrer" className="hover:text-black transition-colors">GitHub</a>
+            <a href="#" className="hover:text-black transition-colors">Instagram</a>
+          </div>
+        </footer>
       </div>
     </div>
   );

@@ -485,127 +485,164 @@ function App() {
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {/* Project 1: MailTempPro */}
-              <div className="reveal-on-scroll bg-white border border-black/5 rounded-2xl p-6 sm:p-8 flex flex-col justify-between hover:shadow-xl hover:shadow-black/[0.02] hover:-translate-y-1 transition-all duration-300 group" style={{ transitionDelay: '50ms' }}>
-                <div>
-                  <span className="text-[12px] uppercase tracking-wider text-zinc-400 font-bold mb-3 block">Web Application</span>
-                  <h3
-                    className="text-[24px] sm:text-[28px] tracking-tight font-medium mb-3 group-hover:text-zinc-600 transition-colors"
-                    style={{ fontFamily: 'var(--font-heading)' }}
-                  >
-                    01 / MailTempPro
-                  </h3>
-                  <p className="text-[15px] text-zinc-600 mb-6 leading-relaxed">
-                    Layanan pembuat email sementara (temp-mail) premium dengan kotak masuk real-time, alamat kustom, dan antarmuka bersih yang mengutamakan privasi.
-                  </p>
+              <div className="reveal-on-scroll bg-white border border-black/5 rounded-2xl overflow-hidden flex flex-col justify-between hover:shadow-xl hover:shadow-black/[0.04] hover:-translate-y-1 transition-all duration-300 group" style={{ transitionDelay: '50ms' }}>
+                {/* Preview image */}
+                <div className="overflow-hidden bg-zinc-100 h-[180px]">
+                  <img
+                    src="/previews/mailtemppro_preview.png"
+                    alt="MailTempPro preview"
+                    className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
+                  />
                 </div>
-                <div>
-                  <div className="flex flex-wrap gap-2 mb-6">
-                    <span className="bg-zinc-100 text-zinc-800 text-[12px] px-3 py-1 rounded-full font-medium">React</span>
-                    <span className="bg-zinc-100 text-zinc-800 text-[12px] px-3 py-1 rounded-full font-medium">TypeScript</span>
-                    <span className="bg-zinc-100 text-zinc-800 text-[12px] px-3 py-1 rounded-full font-medium">Tailwind CSS</span>
-                    <span className="bg-zinc-100 text-zinc-800 text-[12px] px-3 py-1 rounded-full font-medium">API Integration</span>
+                <div className="p-6 sm:p-8 flex flex-col flex-1 justify-between">
+                  <div>
+                    <span className="text-[12px] uppercase tracking-wider text-zinc-400 font-bold mb-3 block">Web Application</span>
+                    <h3
+                      className="text-[22px] sm:text-[26px] tracking-tight font-medium mb-3 group-hover:text-zinc-600 transition-colors"
+                      style={{ fontFamily: 'var(--font-heading)' }}
+                    >
+                      01 / MailTempPro
+                    </h3>
+                    <p className="text-[15px] text-zinc-600 mb-6 leading-relaxed">
+                      Layanan pembuat email sementara (temp-mail) premium dengan kotak masuk real-time, alamat kustom, dan antarmuka bersih yang mengutamakan privasi.
+                    </p>
                   </div>
-                  <div className="flex flex-row items-center gap-6">
-                    <a href="https://mailtemppro.netlify.app/" target="_blank" rel="noopener noreferrer" className="text-[14px] sm:text-[15px] font-semibold underline underline-offset-4 hover:opacity-60 transition-opacity inline-flex items-center gap-1 cursor-pointer">
-                      Kunjungi Situs ↗
-                    </a>
-                    <a href="https://github.com/saferill/TempMail" target="_blank" rel="noopener noreferrer" className="text-[14px] sm:text-[15px] text-zinc-500 hover:text-black underline underline-offset-4 hover:opacity-60 transition-all inline-flex items-center gap-1 cursor-pointer font-medium">
-                      Lihat Code ↗
-                    </a>
+                  <div>
+                    <div className="flex flex-wrap gap-2 mb-6">
+                      <span className="bg-zinc-100 text-zinc-800 text-[12px] px-3 py-1 rounded-full font-medium">React</span>
+                      <span className="bg-zinc-100 text-zinc-800 text-[12px] px-3 py-1 rounded-full font-medium">TypeScript</span>
+                      <span className="bg-zinc-100 text-zinc-800 text-[12px] px-3 py-1 rounded-full font-medium">Tailwind CSS</span>
+                      <span className="bg-zinc-100 text-zinc-800 text-[12px] px-3 py-1 rounded-full font-medium">API Integration</span>
+                    </div>
+                    <div className="flex flex-row items-center gap-6">
+                      <a href="https://mailtemppro.netlify.app/" target="_blank" rel="noopener noreferrer" className="text-[14px] sm:text-[15px] font-semibold underline underline-offset-4 hover:opacity-60 transition-opacity inline-flex items-center gap-1 cursor-pointer">
+                        Kunjungi Situs ↗
+                      </a>
+                      <a href="https://github.com/saferill/TempMail" target="_blank" rel="noopener noreferrer" className="text-[14px] sm:text-[15px] text-zinc-500 hover:text-black underline underline-offset-4 hover:opacity-60 transition-all inline-flex items-center gap-1 cursor-pointer font-medium">
+                        Lihat Code ↗
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
 
               {/* Project 2: World News Reports */}
-              <div className="reveal-on-scroll bg-white border border-black/5 rounded-2xl p-6 sm:p-8 flex flex-col justify-between hover:shadow-xl hover:shadow-black/[0.02] hover:-translate-y-1 transition-all duration-300 group" style={{ transitionDelay: '100ms' }}>
-                <div>
-                  <span className="text-[12px] uppercase tracking-wider text-zinc-400 font-bold mb-3 block">News Aggregator</span>
-                  <h3
-                    className="text-[24px] sm:text-[28px] tracking-tight font-medium mb-3 group-hover:text-zinc-600 transition-colors"
-                    style={{ fontFamily: 'var(--font-heading)' }}
-                  >
-                    02 / World News Reports
-                  </h3>
-                  <p className="text-[15px] text-zinc-600 mb-6 leading-relaxed">
-                    Portal kurasi berita global real-time yang mengumpulkan informasi teraktual dari berbagai penjuru dunia dengan kategorisasi topik yang intuitif.
-                  </p>
+              <div className="reveal-on-scroll bg-white border border-black/5 rounded-2xl overflow-hidden flex flex-col justify-between hover:shadow-xl hover:shadow-black/[0.04] hover:-translate-y-1 transition-all duration-300 group" style={{ transitionDelay: '100ms' }}>
+                <div className="overflow-hidden bg-zinc-100 h-[180px]">
+                  <img
+                    src="/previews/worldnews_preview.png"
+                    alt="World News Reports preview"
+                    className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
+                  />
                 </div>
-                <div>
-                  <div className="flex flex-wrap gap-2 mb-6">
-                    <span className="bg-zinc-100 text-zinc-800 text-[12px] px-3 py-1 rounded-full font-medium">HTML5</span>
-                    <span className="bg-zinc-100 text-zinc-800 text-[12px] px-3 py-1 rounded-full font-medium">CSS3</span>
-                    <span className="bg-zinc-100 text-zinc-800 text-[12px] px-3 py-1 rounded-full font-medium">JavaScript</span>
-                    <span className="bg-zinc-100 text-zinc-800 text-[12px] px-3 py-1 rounded-full font-medium">NewsAPI</span>
+                <div className="p-6 sm:p-8 flex flex-col flex-1 justify-between">
+                  <div>
+                    <span className="text-[12px] uppercase tracking-wider text-zinc-400 font-bold mb-3 block">News Aggregator</span>
+                    <h3
+                      className="text-[22px] sm:text-[26px] tracking-tight font-medium mb-3 group-hover:text-zinc-600 transition-colors"
+                      style={{ fontFamily: 'var(--font-heading)' }}
+                    >
+                      02 / World News Reports
+                    </h3>
+                    <p className="text-[15px] text-zinc-600 mb-6 leading-relaxed">
+                      Portal kurasi berita global real-time yang mengumpulkan informasi teraktual dari berbagai penjuru dunia dengan kategorisasi topik yang intuitif.
+                    </p>
                   </div>
-                  <div className="flex flex-row items-center gap-6">
-                    <a href="https://worldnewsreports.github.io/" target="_blank" rel="noopener noreferrer" className="text-[14px] sm:text-[15px] font-semibold underline underline-offset-4 hover:opacity-60 transition-opacity inline-flex items-center gap-1 cursor-pointer">
-                      Kunjungi Situs ↗
-                    </a>
-                    <a href="https://github.com/worldnewsreports/worldnewsreports.github.io" target="_blank" rel="noopener noreferrer" className="text-[14px] sm:text-[15px] text-zinc-500 hover:text-black underline underline-offset-4 hover:opacity-60 transition-all inline-flex items-center gap-1 cursor-pointer font-medium">
-                      Lihat Code ↗
-                    </a>
+                  <div>
+                    <div className="flex flex-wrap gap-2 mb-6">
+                      <span className="bg-zinc-100 text-zinc-800 text-[12px] px-3 py-1 rounded-full font-medium">HTML5</span>
+                      <span className="bg-zinc-100 text-zinc-800 text-[12px] px-3 py-1 rounded-full font-medium">CSS3</span>
+                      <span className="bg-zinc-100 text-zinc-800 text-[12px] px-3 py-1 rounded-full font-medium">JavaScript</span>
+                      <span className="bg-zinc-100 text-zinc-800 text-[12px] px-3 py-1 rounded-full font-medium">NewsAPI</span>
+                    </div>
+                    <div className="flex flex-row items-center gap-6">
+                      <a href="https://worldnewsreports.github.io/" target="_blank" rel="noopener noreferrer" className="text-[14px] sm:text-[15px] font-semibold underline underline-offset-4 hover:opacity-60 transition-opacity inline-flex items-center gap-1 cursor-pointer">
+                        Kunjungi Situs ↗
+                      </a>
+                      <a href="https://github.com/worldnewsreports/worldnewsreports.github.io" target="_blank" rel="noopener noreferrer" className="text-[14px] sm:text-[15px] text-zinc-500 hover:text-black underline underline-offset-4 hover:opacity-60 transition-all inline-flex items-center gap-1 cursor-pointer font-medium">
+                        Lihat Code ↗
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
 
               {/* Project 3: SafeVideos */}
-              <div className="reveal-on-scroll bg-white border border-black/5 rounded-2xl p-6 sm:p-8 flex flex-col justify-between hover:shadow-xl hover:shadow-black/[0.02] hover:-translate-y-1 transition-all duration-300 group" style={{ transitionDelay: '150ms' }}>
-                <div>
-                  <span className="text-[12px] uppercase tracking-wider text-zinc-400 font-bold mb-3 block">Video Streaming</span>
-                  <h3
-                    className="text-[24px] sm:text-[28px] tracking-tight font-medium mb-3 group-hover:text-zinc-600 transition-colors"
-                    style={{ fontFamily: 'var(--font-heading)' }}
-                  >
-                    03 / SafeVideos
-                  </h3>
-                  <p className="text-[15px] text-zinc-600 mb-6 leading-relaxed">
-                    Platform kurasi pemutaran video aman bagi semua umur dengan penyaringan ketat konten, bebas iklan, dan ramah pengguna.
-                  </p>
+              <div className="reveal-on-scroll bg-white border border-black/5 rounded-2xl overflow-hidden flex flex-col justify-between hover:shadow-xl hover:shadow-black/[0.04] hover:-translate-y-1 transition-all duration-300 group" style={{ transitionDelay: '150ms' }}>
+                <div className="overflow-hidden bg-zinc-100 h-[180px]">
+                  <img
+                    src="/previews/safevideos_preview.png"
+                    alt="SafeVideos preview"
+                    className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
+                  />
                 </div>
-                <div>
-                  <div className="flex flex-wrap gap-2 mb-6">
-                    <span className="bg-zinc-100 text-zinc-800 text-[12px] px-3 py-1 rounded-full font-medium">Next.js</span>
-                    <span className="bg-zinc-100 text-zinc-800 text-[12px] px-3 py-1 rounded-full font-medium">Tailwind CSS</span>
-                    <span className="bg-zinc-100 text-zinc-800 text-[12px] px-3 py-1 rounded-full font-medium">Video API</span>
+                <div className="p-6 sm:p-8 flex flex-col flex-1 justify-between">
+                  <div>
+                    <span className="text-[12px] uppercase tracking-wider text-zinc-400 font-bold mb-3 block">Video Streaming</span>
+                    <h3
+                      className="text-[22px] sm:text-[26px] tracking-tight font-medium mb-3 group-hover:text-zinc-600 transition-colors"
+                      style={{ fontFamily: 'var(--font-heading)' }}
+                    >
+                      03 / SafeVideos
+                    </h3>
+                    <p className="text-[15px] text-zinc-600 mb-6 leading-relaxed">
+                      Platform kurasi pemutaran video aman bagi semua umur dengan penyaringan ketat konten, bebas iklan, dan ramah pengguna.
+                    </p>
                   </div>
-                  <div className="flex flex-row items-center gap-6">
-                    <a href="https://safevideos.vercel.app" target="_blank" rel="noopener noreferrer" className="text-[14px] sm:text-[15px] font-semibold underline underline-offset-4 hover:opacity-60 transition-opacity inline-flex items-center gap-1 cursor-pointer">
-                      Kunjungi Situs ↗
-                    </a>
-                    <a href="https://github.com/saferill/safevideo" target="_blank" rel="noopener noreferrer" className="text-[14px] sm:text-[15px] text-zinc-500 hover:text-black underline underline-offset-4 hover:opacity-60 transition-all inline-flex items-center gap-1 cursor-pointer font-medium">
-                      Lihat Code ↗
-                    </a>
+                  <div>
+                    <div className="flex flex-wrap gap-2 mb-6">
+                      <span className="bg-zinc-100 text-zinc-800 text-[12px] px-3 py-1 rounded-full font-medium">Next.js</span>
+                      <span className="bg-zinc-100 text-zinc-800 text-[12px] px-3 py-1 rounded-full font-medium">Tailwind CSS</span>
+                      <span className="bg-zinc-100 text-zinc-800 text-[12px] px-3 py-1 rounded-full font-medium">Video API</span>
+                    </div>
+                    <div className="flex flex-row items-center gap-6">
+                      <a href="https://safevideos.vercel.app" target="_blank" rel="noopener noreferrer" className="text-[14px] sm:text-[15px] font-semibold underline underline-offset-4 hover:opacity-60 transition-opacity inline-flex items-center gap-1 cursor-pointer">
+                        Kunjungi Situs ↗
+                      </a>
+                      <a href="https://github.com/saferill/safevideo" target="_blank" rel="noopener noreferrer" className="text-[14px] sm:text-[15px] text-zinc-500 hover:text-black underline underline-offset-4 hover:opacity-60 transition-all inline-flex items-center gap-1 cursor-pointer font-medium">
+                        Lihat Code ↗
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
 
               {/* Project 4: Sonara Music App */}
-              <div className="reveal-on-scroll bg-white border border-black/5 rounded-2xl p-6 sm:p-8 flex flex-col justify-between hover:shadow-xl hover:shadow-black/[0.02] hover:-translate-y-1 transition-all duration-300 group" style={{ transitionDelay: '200ms' }}>
-                <div>
-                  <span className="text-[12px] uppercase tracking-wider text-zinc-400 font-bold mb-3 block">Android Application</span>
-                  <h3
-                    className="text-[24px] sm:text-[28px] tracking-tight font-medium mb-3 group-hover:text-zinc-600 transition-colors"
-                    style={{ fontFamily: 'var(--font-heading)' }}
-                  >
-                    04 / Sonara Music
-                  </h3>
-                  <p className="text-[15px] text-zinc-600 mb-6 leading-relaxed">
-                    Aplikasi pemutar musik Android premium dengan antarmuka dinamis modern, daftar putar kustom, dan mesin pemutaran audio berkualitas tinggi.
-                  </p>
+              <div className="reveal-on-scroll bg-white border border-black/5 rounded-2xl overflow-hidden flex flex-col justify-between hover:shadow-xl hover:shadow-black/[0.04] hover:-translate-y-1 transition-all duration-300 group" style={{ transitionDelay: '200ms' }}>
+                <div className="overflow-hidden bg-zinc-900 h-[180px]">
+                  <img
+                    src="/previews/sonaramusic_preview.png"
+                    alt="Sonara Music preview"
+                    className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+                  />
                 </div>
-                <div>
-                  <div className="flex flex-wrap gap-2 mb-6">
-                    <span className="bg-zinc-100 text-zinc-800 text-[12px] px-3 py-1 rounded-full font-medium">Android SDK</span>
-                    <span className="bg-zinc-100 text-zinc-800 text-[12px] px-3 py-1 rounded-full font-medium">Kotlin</span>
-                    <span className="bg-zinc-100 text-zinc-800 text-[12px] px-3 py-1 rounded-full font-medium">Jetpack Compose</span>
+                <div className="p-6 sm:p-8 flex flex-col flex-1 justify-between">
+                  <div>
+                    <span className="text-[12px] uppercase tracking-wider text-zinc-400 font-bold mb-3 block">Android Application</span>
+                    <h3
+                      className="text-[22px] sm:text-[26px] tracking-tight font-medium mb-3 group-hover:text-zinc-600 transition-colors"
+                      style={{ fontFamily: 'var(--font-heading)' }}
+                    >
+                      04 / Sonara Music
+                    </h3>
+                    <p className="text-[15px] text-zinc-600 mb-6 leading-relaxed">
+                      Aplikasi pemutar musik Android premium dengan antarmuka dinamis modern, daftar putar kustom, dan mesin pemutaran audio berkualitas tinggi.
+                    </p>
                   </div>
-                  <div className="flex flex-row items-center gap-6">
-                    <a href="https://github.com/saferill/Music-App/releases/download/v1.3.0/Sonara.Music.apk" target="_blank" rel="noopener noreferrer" className="text-[14px] sm:text-[15px] font-semibold underline underline-offset-4 hover:opacity-60 transition-opacity inline-flex items-center gap-1 cursor-pointer">
-                      Unduh APK ↓
-                    </a>
-                    <a href="https://github.com/saferill/Music-App" target="_blank" rel="noopener noreferrer" className="text-[14px] sm:text-[15px] text-zinc-500 hover:text-black underline underline-offset-4 hover:opacity-60 transition-all inline-flex items-center gap-1 cursor-pointer font-medium">
-                      Lihat Code ↗
-                    </a>
+                  <div>
+                    <div className="flex flex-wrap gap-2 mb-6">
+                      <span className="bg-zinc-100 text-zinc-800 text-[12px] px-3 py-1 rounded-full font-medium">Android SDK</span>
+                      <span className="bg-zinc-100 text-zinc-800 text-[12px] px-3 py-1 rounded-full font-medium">Kotlin</span>
+                      <span className="bg-zinc-100 text-zinc-800 text-[12px] px-3 py-1 rounded-full font-medium">Jetpack Compose</span>
+                    </div>
+                    <div className="flex flex-row items-center gap-6">
+                      <a href="https://github.com/saferill/Music-App/releases/download/v1.3.0/Sonara.Music.apk" target="_blank" rel="noopener noreferrer" className="text-[14px] sm:text-[15px] font-semibold underline underline-offset-4 hover:opacity-60 transition-opacity inline-flex items-center gap-1 cursor-pointer">
+                        Unduh APK ↓
+                      </a>
+                      <a href="https://github.com/saferill/Music-App" target="_blank" rel="noopener noreferrer" className="text-[14px] sm:text-[15px] text-zinc-500 hover:text-black underline underline-offset-4 hover:opacity-60 transition-all inline-flex items-center gap-1 cursor-pointer font-medium">
+                        Lihat Code ↗
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>

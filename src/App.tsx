@@ -426,30 +426,17 @@ function App() {
           }}
         >
           <div className="max-w-4xl w-full flex flex-col gap-16 text-black">
-            {/* Intro Narrative + Photo */}
-            <div className="reveal-on-scroll flex flex-col md:flex-row gap-10 md:gap-14 items-start">
-              {/* Photo */}
-              <div className="shrink-0">
-                <div className="w-[140px] h-[140px] md:w-[180px] md:h-[180px] rounded-2xl overflow-hidden border border-black/5 shadow-lg shadow-black/[0.04]">
-                  <img
-                    src="/profile.png"
-                    alt="Moch. Syafril Ramadhani"
-                    className="w-full h-full object-cover object-top"
-                  />
-                </div>
-              </div>
-              {/* Text */}
-              <div className="max-w-2xl">
-                <h2
-                  className="text-[32px] sm:text-[42px] tracking-tight mb-6 leading-none"
-                  style={{ fontFamily: 'var(--font-heading)' }}
-                >
-                  Tentang Syafril
-                </h2>
-                <p className="text-[20px] sm:text-[23px] leading-relaxed text-zinc-800 font-light">
-                  Halo, saya Syafril, seorang mahasiswa, desainer antarmuka (UI/UX), dan fullstack developer yang berfokus pada estetika visual. Saya suka memadukan seni desain dengan fungsionalitas teknologi untuk menciptakan pengalaman digital yang intuitif, bersih, dan berkesan. Bagi saya, keindahan terletak pada kesederhanaan dan ketelitian di setiap piksel.
-                </p>
-              </div>
+            {/* Intro Narrative */}
+            <div className="reveal-on-scroll max-w-3xl">
+              <h2
+                className="text-[32px] sm:text-[42px] tracking-tight mb-6 leading-none"
+                style={{ fontFamily: 'var(--font-heading)' }}
+              >
+                Tentang Syafril
+              </h2>
+              <p className="text-[20px] sm:text-[23px] leading-relaxed text-zinc-800 font-light">
+                Halo, saya Syafril, seorang mahasiswa, desainer antarmuka (UI/UX), dan fullstack developer yang berfokus pada estetika visual. Saya suka memadukan seni desain dengan fungsionalitas teknologi untuk menciptakan pengalaman digital yang intuitif, bersih, dan berkesan. Bagi saya, keindahan terletak pada kesederhanaan dan ketelitian di setiap piksel.
+              </p>
             </div>
 
             {/* Keahlian & Tools */}

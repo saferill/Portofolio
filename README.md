@@ -1,73 +1,91 @@
-# React + TypeScript + Vite
+# Syafril — Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Personal portfolio website milik **Moch. Syafril Ramadhani**, seorang UI/UX Designer & Fullstack Developer.
 
-Currently, two official plugins are available:
+🌐 **Live:** *(coming soon — deploy ke Vercel/Netlify)*  
+📁 **Repo:** [github.com/saferill/Portofolio](https://github.com/saferill/Portofolio)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## Tentang
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Portfolio ini dirancang untuk menampilkan karya dan kemampuan saya di bidang desain antarmuka dan pengembangan web/mobile. Dibuat dengan memperhatikan estetika visual, performa, dan pengalaman pengguna.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Fitur
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- 🎬 **Background video interaktif** — video hero yang bisa di-scrub mengikuti gerakan mouse
+- ✨ **Intro screen animasi** — layar intro elegan saat pertama kali membuka website
+- ⌨️ **Typewriter effect** — teks yang muncul satu per satu di hero section
+- 📬 **Contact form dengan EmailJS** — pesan langsung masuk ke email + auto-reply otomatis ke pengirim
+- 📱 **Fully responsive** — tampilan optimal di desktop maupun mobile
+- 🔍 **SEO ready** — meta title dan description sudah dikonfigurasi
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## Selected Work
+
+| Proyek | Kategori | Link |
+|---|---|---|
+| **MailTempPro** | Web App — Temp Email | [mailtemppro.netlify.app](https://mailtemppro.netlify.app/) |
+| **World News Reports** | News Aggregator | [worldnewsreports.github.io](https://worldnewsreports.github.io/) |
+| **SafeVideos** | Video Streaming | [safevideos.vercel.app](https://safevideos.vercel.app) |
+| **Sonara Music** | Android App | [Download APK](https://github.com/saferill/Music-App/releases/download/v1.3.0/Sonara.Music.apk) |
+
+---
+
+## Tech Stack
+
+- **Framework:** React + TypeScript
+- **Bundler:** Vite
+- **Styling:** Tailwind CSS
+- **Email:** EmailJS (`@emailjs/browser`)
+- **Font:** Helvetica Now Display
+
+---
+
+## Menjalankan Secara Lokal
+
+```bash
+# Clone repo
+git clone https://github.com/saferill/Portofolio.git
+cd Portofolio
+
+# Install dependencies
+npm install
+
+# Jalankan dev server
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Buka `http://localhost:5173` di browser.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## Struktur Proyek
+
 ```
+Portofolio/
+├── public/
+│   ├── favicon.svg          # Favicon inisial "S"
+│   └── previews/            # Gambar preview proyek
+├── src/
+│   ├── App.tsx              # Komponen utama (seluruh halaman)
+│   ├── index.css            # Global styles & animasi
+│   └── main.tsx             # Entry point
+├── index.html               # HTML root + meta tags
+└── package.json
+```
+
+---
+
+## Kontak
+
+**Moch. Syafril Ramadhani**  
+📧 mochsyafrilramadhani5@gmail.com  
+🐙 [github.com/saferill](https://github.com/saferill)
+
+---
+
+© 2026 Moch. Syafril Ramadhani

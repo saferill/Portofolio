@@ -2,7 +2,7 @@
 
 Personal portfolio website milik **Moch. Syafril Ramadhani**, seorang UI/UX Designer & Fullstack Developer.
 
-🌐 **Live:** *(coming soon — deploy ke Vercel/Netlify)*  
+🌐 **Live:** [syafril-portofolio.vercel.app](https://syafril-portofolio.vercel.app)  
 📁 **Repo:** [github.com/saferill/Portofolio](https://github.com/saferill/Portofolio)
 
 ---

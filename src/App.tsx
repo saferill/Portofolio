@@ -742,7 +742,7 @@ function App() {
           <p>© {new Date().getFullYear()} Moch. Syafril Ramadhani.</p>
           <div className="flex items-center gap-6 mt-4 sm:mt-0">
             <a href="https://github.com/saferill" target="_blank" rel="noopener noreferrer" className="hover:text-black transition-colors">GitHub</a>
-            <a href="https://instagram.com/safe_rill" target="_blank" rel="noopener noreferrer" className="hover:text-black transition-colors">Instagram</a>
+            <a href="https://www.instagram.com/safe_rill/" target="_blank" rel="noopener noreferrer" className="hover:text-black transition-colors">Instagram</a>
           </div>
         </footer>
       </div>

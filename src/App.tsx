@@ -484,7 +484,47 @@ function App() {
               Selected Work
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              {/* Project 1: MailTempPro */}
+              {/* Project 1: CineWatch */}
+              <div className="reveal-on-scroll bg-white border border-black/5 rounded-2xl overflow-hidden flex flex-col justify-between hover:shadow-xl hover:shadow-black/[0.04] hover:-translate-y-1 transition-all duration-300 group" style={{ transitionDelay: '50ms' }}>
+                <div className="overflow-hidden bg-zinc-100 h-[180px]">
+                  <img
+                    src="/previews/cinewatch_preview.png"
+                    alt="CineWatch preview"
+                    className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
+                  />
+                </div>
+                <div className="p-6 sm:p-8 flex flex-col flex-1 justify-between">
+                  <div>
+                    <span className="text-[12px] uppercase tracking-wider text-zinc-400 font-bold mb-3 block">Movie Platform</span>
+                    <h3
+                      className="text-[22px] sm:text-[26px] tracking-tight font-medium mb-3 group-hover:text-zinc-600 transition-colors"
+                      style={{ fontFamily: 'var(--font-heading)' }}
+                    >
+                      01 / CineWatch
+                    </h3>
+                    <p className="text-[15px] text-zinc-600 mb-6 leading-relaxed">
+                      Platform modern untuk eksplorasi film, seri, anime, dan donghua. Menampilkan trending movies, fitur pencarian canggih, serta manajemen daftar tontonan.
+                    </p>
+                  </div>
+                  <div>
+                    <div className="flex flex-wrap gap-2 mb-6">
+                      <span className="bg-zinc-100 text-zinc-800 text-[12px] px-3 py-1 rounded-full font-medium">React</span>
+                      <span className="bg-zinc-100 text-zinc-800 text-[12px] px-3 py-1 rounded-full font-medium">Tailwind CSS</span>
+                      <span className="bg-zinc-100 text-zinc-800 text-[12px] px-3 py-1 rounded-full font-medium">API Integration</span>
+                    </div>
+                    <div className="flex flex-row items-center gap-6">
+                      <a href="https://cinewatch.web.id/" target="_blank" rel="noopener noreferrer" className="text-[14px] sm:text-[15px] font-semibold underline underline-offset-4 hover:opacity-60 transition-opacity inline-flex items-center gap-1 cursor-pointer">
+                        Kunjungi Situs ↗
+                      </a>
+                      <a href="https://github.com/saferill/CineWatch" target="_blank" rel="noopener noreferrer" className="text-[14px] sm:text-[15px] text-zinc-500 hover:text-black underline underline-offset-4 hover:opacity-60 transition-all inline-flex items-center gap-1 cursor-pointer font-medium">
+                        Lihat Code ↗
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Project 2: MailTempPro */}
               <div className="reveal-on-scroll bg-white border border-black/5 rounded-2xl overflow-hidden flex flex-col justify-between hover:shadow-xl hover:shadow-black/[0.04] hover:-translate-y-1 transition-all duration-300 group" style={{ transitionDelay: '50ms' }}>
                 {/* Preview image */}
                 <div className="overflow-hidden bg-zinc-100 h-[180px]">
@@ -501,7 +541,7 @@ function App() {
                       className="text-[22px] sm:text-[26px] tracking-tight font-medium mb-3 group-hover:text-zinc-600 transition-colors"
                       style={{ fontFamily: 'var(--font-heading)' }}
                     >
-                      01 / MailTempPro
+                      02 / MailTempPro
                     </h3>
                     <p className="text-[15px] text-zinc-600 mb-6 leading-relaxed">
                       Layanan pembuat email sementara (temp-mail) premium dengan kotak masuk real-time, alamat kustom, dan antarmuka bersih yang mengutamakan privasi.
@@ -542,7 +582,7 @@ function App() {
                       className="text-[22px] sm:text-[26px] tracking-tight font-medium mb-3 group-hover:text-zinc-600 transition-colors"
                       style={{ fontFamily: 'var(--font-heading)' }}
                     >
-                      02 / World News Reports
+                      03 / World News Reports
                     </h3>
                     <p className="text-[15px] text-zinc-600 mb-6 leading-relaxed">
                       Portal kurasi berita global real-time yang mengumpulkan informasi teraktual dari berbagai penjuru dunia dengan kategorisasi topik yang intuitif.
@@ -583,7 +623,7 @@ function App() {
                       className="text-[22px] sm:text-[26px] tracking-tight font-medium mb-3 group-hover:text-zinc-600 transition-colors"
                       style={{ fontFamily: 'var(--font-heading)' }}
                     >
-                      03 / SafeVideos
+                      04 / SafeVideos
                     </h3>
                     <p className="text-[15px] text-zinc-600 mb-6 leading-relaxed">
                       Platform kurasi pemutaran video aman bagi semua umur dengan penyaringan ketat konten, bebas iklan, dan ramah pengguna.
@@ -623,7 +663,7 @@ function App() {
                       className="text-[22px] sm:text-[26px] tracking-tight font-medium mb-3 group-hover:text-zinc-600 transition-colors"
                       style={{ fontFamily: 'var(--font-heading)' }}
                     >
-                      04 / Sonara Music
+                      05 / Sonara Music
                     </h3>
                     <p className="text-[15px] text-zinc-600 mb-6 leading-relaxed">
                       Aplikasi pemutar musik Android premium dengan antarmuka dinamis modern, daftar putar kustom, dan mesin pemutaran audio berkualitas tinggi.

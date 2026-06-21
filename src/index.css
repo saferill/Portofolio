@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+:root {
+  --font-heading: 'HelveticaNowDisplay-Medium', 'Helvetica Neue', Arial, sans-serif;
+  --font-body: 'HelveticaNowDisplayW01-Rg', 'Helvetica Neue', Arial, sans-serif;
+}
+
+body {
+  font-family: var(--font-body);
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  color: #000;
+  overflow-x: hidden;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.cursor-blink {
+  animation: blink 1s step-end infinite;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.fade-slide-up {
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.fade-slide-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal-on-scroll.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ── Intro screen ── */
+@keyframes intro-text-in {
+  0%   { opacity: 0; letter-spacing: 0.25em; }
+  100% { opacity: 1; letter-spacing: 0.08em; }
+}
+
+@keyframes intro-overlay-out {
+  0%   { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+.intro-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background-color: #0a0a0a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.intro-overlay.hiding {
+  animation: intro-overlay-out 0.7s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+.intro-overlay.hidden {
+  display: none;
+}
+
+.intro-text {
+  font-family: var(--font-heading);
+  font-size: clamp(28px, 6vw, 56px);
+  color: #ffffff;
+  letter-spacing: 0.08em;
+  animation: intro-text-in 0.9s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}

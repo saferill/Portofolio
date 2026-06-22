@@ -4,10 +4,10 @@ import { ContainerScroll } from "./components/ui/container-scroll-animation";
 
 // Icons for Dark Mode
 const SunIcon = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="4" /><path d="M12 2v2" /><path d="M12 20v2" /><path d="m4.93 4.93 1.41 1.41" /><path d="m17.66 17.66 1.41 1.41" /><path d="M2 12h2" /><path d="M20 12h2" /><path d="m6.34 17.66-1.41 1.41" /><path d="m19.07 4.93-1.41 1.41" /></svg>
 );
 const MoonIcon = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" /></svg>
 );
 import emailjs from '@emailjs/browser';
 
@@ -85,7 +85,7 @@ function App() {
       sessionStorage.setItem('intro_seen', '1');
     }, 2500);
     return () => { clearTimeout(holdTimer); clearTimeout(removeTimer); };
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   // Track window scroll for navbar background
@@ -279,8 +279,8 @@ function App() {
 
       {/* Navbar */}
       <nav className={`fixed top-0 left-0 w-full px-5 sm:px-8 py-4 sm:py-5 flex flex-row justify-between items-center z-20 transition-all duration-300 ${scrolled
-          ? 'bg-white/80 dark:bg-[#0a0a0a]/80 backdrop-blur-md border-b border-black/5 dark:border-white/5 shadow-sm'
-          : 'bg-white/10 dark:bg-black/10 backdrop-blur-[2px] md:bg-transparent md:backdrop-blur-none border-b border-transparent'
+        ? 'bg-white/80 dark:bg-[#0a0a0a]/80 backdrop-blur-md border-b border-black/5 dark:border-white/5 shadow-sm'
+        : 'bg-white/10 dark:bg-black/10 backdrop-blur-[2px] md:bg-transparent md:backdrop-blur-none border-b border-transparent'
         }`}>
         {/* Logo */}
         <div className="flex flex-row items-center gap-3 cursor-pointer" onClick={() => scrollTo(heroRef)}>
@@ -491,7 +491,7 @@ function App() {
         >
           {/* Smooth transition from White (About) to Zinc-50 (Projects) */}
           <div className="absolute top-0 left-0 w-full h-[150px] pointer-events-none bg-gradient-to-b from-transparent to-zinc-50 dark:to-[#111] z-10" />
-          
+
           <div className="w-full text-center mb-10 z-20 relative">
             <motion.h2
               initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: "-50px" }} transition={{ duration: 0.6 }}
@@ -518,7 +518,7 @@ function App() {
                     <span className="bg-zinc-200 dark:bg-[#222] text-zinc-800 dark:text-zinc-300 text-[12px] px-3 py-1 rounded-full font-medium">React</span><span className="bg-zinc-200 dark:bg-[#222] text-zinc-800 dark:text-zinc-300 text-[12px] px-3 py-1 rounded-full font-medium">Tailwind CSS</span><span className="bg-zinc-200 dark:bg-[#222] text-zinc-800 dark:text-zinc-300 text-[12px] px-3 py-1 rounded-full font-medium">API Integration</span>
                   </div>
                   <div className="flex flex-row items-center justify-center gap-6">
-                    <a href="https://cinewatch.web.id/" target="_blank" rel="noopener noreferrer" className="text-[15px] font-semibold underline underline-offset-4 hover:opacity-60 transition-opacity text-black dark:text-white">Kunjungi Situs ↗</a>
+                    <a href="https://www.cinewatch.my.id/" target="_blank" rel="noopener noreferrer" className="text-[15px] font-semibold underline underline-offset-4 hover:opacity-60 transition-opacity text-black dark:text-white">Kunjungi Situs ↗</a>
                     <a href="https://github.com/saferill/CineWatch" target="_blank" rel="noopener noreferrer" className="text-[15px] text-zinc-500 dark:text-zinc-400 hover:text-black dark:hover:text-white underline underline-offset-4 hover:opacity-60 transition-all font-medium">Lihat Code ↗</a>
                   </div>
                 </div>
